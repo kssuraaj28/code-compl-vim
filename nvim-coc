@@ -1,0 +1,9 @@
+#!/usr/bin/env bash 
+set -e
+
+vimrc_dir="$( cd "$( dirname "$(realpath "${BASH_SOURCE[0]}")" )" >/dev/null 2>&1 && pwd )/vimrc.d"
+
+# This is how you extend my vim configuration
+vimrclist="$EXTRA_VIMRCD:$vimrc_dir"
+
+EXTRA_VIMRCD="$vimrclist" exec nvim "$@"
