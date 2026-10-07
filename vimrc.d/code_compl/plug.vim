@@ -1,2 +1,2 @@
 Plug 'honza/vim-snippets'
-Plug 'neoclide/coc.nvim', empty($DISABLE_COCVIM) ? {'branch': 'release'} : { 'on' : [] }
+Plug 'neoclide/coc.nvim', {'branch': 'release'} 
